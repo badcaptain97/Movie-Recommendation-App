@@ -11,4 +11,4 @@ A Streamlit-based web app for movie recommendations using content-based filterin
 ## How to Run Locally
 
 pip install -r requirements.txt
-streamlit run src/main.py
+python -m streamlit run src/main.py
