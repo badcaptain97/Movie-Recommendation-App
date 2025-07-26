@@ -1,7 +1,13 @@
 import joblib
+from pathlib import Path
 
-df = joblib.load('data.pkl')
-cos_sim = joblib.load('cos_sim.pkl')
+# Get the path to the current file
+current_file = Path(__file__).resolve()
+base_dir = current_file.parent  # Directory containing the current file
+
+# Load the files relative to the file location
+df = joblib.load(base_dir / 'data.pkl')
+cos_sim = joblib.load(base_dir / 'cos_sim.pkl')
 
 
 # final

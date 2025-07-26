@@ -2,6 +2,12 @@ import json
 import streamlit as st
 from recommend import df,recommend_movies
 from omdb import get_movie_details
+from pathlib import Path
+
+current_file = Path(__file__).resolve()
+base_dir = current_file.parent  # Directory containing the current file
+
+print(current_file, "########")
 
 st.set_page_config(
     page_title="Movie Recommender",
@@ -9,7 +15,7 @@ st.set_page_config(
     layout="centered"
 )
 
-config = json.load(open("config.json"))
+config = json.load( open(base_dir / "config.json"))
 OMDB_API_KEY = config["OMDB_API_KEY"]
 
 st.title("🎬 Movie Recommender")
