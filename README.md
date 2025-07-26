@@ -1,6 +1,5 @@
 # Movie-Recommendation-App
 
-
 A Streamlit-based web app for movie recommendations using content-based filtering.
 
 ## Features
