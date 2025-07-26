@@ -1,7 +1,7 @@
 import joblib
 
-df = joblib.load('./data.pkl')
-cos_sim = joblib.load('./cos_sim.pkl')
+df = joblib.load('data.pkl')
+cos_sim = joblib.load('cos_sim.pkl')
 
 
 # final
